@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, BarChart3, Cloud, Rocket } from 'lucide-react'
+import { ArrowRight, BarChart3, Cloud, Rocket, Sparkles } from 'lucide-react'
 import AnimatedCounter from '../components/AnimatedCounter'
-import LogoMark from '../components/LogoMark'
 
 const stats = [
   { label: 'Cloud Savings', value: 47, suffix: '%' },
@@ -15,11 +14,9 @@ function HeroSection({ branding }) {
     <section id="top" className="section-pad pt-20 sm:pt-24">
       <div className="container-wide grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <div className="mb-6 inline-flex rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600 dark:text-sky-300">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600 dark:text-sky-300">
+            <Sparkles size={12} />
             Next-generation Cloud + AI Engineering
-          </div>
-          <div className="mb-6">
-            <LogoMark logoSrc={branding.logoSrc} companyName={branding.companyName} className="h-20 w-20" showText />
           </div>
           <h1 className="section-title mb-5 text-4xl font-bold leading-tight text-[color:var(--text-main)] sm:text-5xl lg:text-6xl">
             Engineering Scalable Cloud Platforms for the <span className="gradient-text">AI-Driven Future</span>

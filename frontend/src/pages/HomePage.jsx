@@ -8,6 +8,7 @@ import FinOpsSection from '../sections/FinOpsSection'
 import HeroSection from '../sections/HeroSection'
 import MonitoringPreviewSection from '../sections/MonitoringPreviewSection'
 import PricingSection from '../sections/PricingSection'
+import ProductsSection from '../sections/ProductsSection'
 import ServicesSection from '../sections/ServicesSection'
 import TechStackSection from '../sections/TechStackSection'
 import TestimonialsSection from '../sections/TestimonialsSection'
@@ -18,6 +19,7 @@ function HomePage({ branding }) {
     <>
       <HeroSection branding={branding} />
       <ServicesSection />
+      <ProductsSection />
       <AboutSection />
       <TechStackSection />
       <FinOpsSection />
